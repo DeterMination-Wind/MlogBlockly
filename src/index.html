@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MlogBlockly</title>
+  </head>
+  <body>
+    <div id="appShell">
+      <header id="appHeader">
+        <div>
+          <h1>MlogBlockly</h1>
+          <p>Mindustry 逻辑可视化编辑器：支持语法糖、原版积木和自定义 links。</p>
+        </div>
+        <div id="toolbar">
+          <button id="newWorkspaceBtn" type="button">新建</button>
+          <button id="importWorkspaceBtn" type="button">导入 JSON</button>
+          <button id="exportWorkspaceBtn" type="button">导出 JSON</button>
+          <button id="copyMlogBtn" type="button">复制 mlog</button>
+          <button id="downloadMlogBtn" type="button">下载 .mlog</button>
+          <input id="workspaceFileInput" type="file" accept=".json,application/json" hidden />
+        </div>
+      </header>
+
+      <main id="workspaceLayout">
+        <section id="editorPane">
+          <div id="blocklyDiv"></div>
+        </section>
+
+        <aside id="sidePane">
+          <section class="panel">
+            <div class="panelHeader">
+              <h2>逻辑 links（@links）</h2>
+              <span id="linksMeta">0 个候选</span>
+            </div>
+            <div id="linksPanelBody">
+              <p>每行一个连接名，例如：<code>message1</code>、<code>switch1</code>、<code>cell1</code>。</p>
+              <textarea id="logicLinksInput" spellcheck="false" placeholder="message1&#10;switch1&#10;cell1"></textarea>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panelHeader">
+              <h2>生成的 mlog</h2>
+              <span id="codeMeta">0 条指令</span>
+            </div>
+            <pre id="generatedCode"><code></code></pre>
+          </section>
+
+          <section class="panel">
+            <div class="panelHeader">
+              <h2>诊断</h2>
+              <span id="diagnosticMeta">就绪</span>
+            </div>
+            <div id="diagnostics"></div>
+          </section>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>
