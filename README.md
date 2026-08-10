@@ -19,16 +19,14 @@ npm run build
 
 ## Current sugar surface
 
-- `if` / `if else`
-- `while` / `until`
-- `repeat(n)`
-- `for (i in start..end)`
-- `for (i in start until end)`
-- `when (x)` with up to 3 explicit cases and optional `else`
+- Control: `if` / `if else`, `while` / `until`, `repeat(n)`, `for (i in start..end)`, `for (i in start until end)`, `when (x)` with up to 3 explicit cases and optional `else`
+- Functions: `fun` define / call / `return` / `arg`
+- Lists: `mlog_list_define`, `mlog_list_define_dynamic`, set / get / length / push / pop / clear
+- Misc: `comment`, `symbol`, `global` (@-prefixed references)
 
 ## Vanilla compatibility
 
-The toolbox includes a dedicated `原版块（除 jump）` category generated from Mindustry's `LogicIO` schema, covering every registered vanilla statement except `jump` and `noop`.
+The toolbox includes six vanilla categories generated from Mindustry's `LogicIO` schema — `原版·输入输出`, `原版·建筑`, `原版·运算`, `原版·控制`, `原版·单位`, `原版·世界` — covering every registered vanilla statement except `jump` and `noop`.
 
 ## Notes
 
