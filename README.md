@@ -1,6 +1,7 @@
 # MlogBlockly
 
-> [NOTE] 若有反馈，请发送反馈到bugsoc@qq.com / If you have any feedback, please send it to bugsoc@qq.com
+> [!NOTE]
+> 若有反馈，请发送反馈到bugsoc@qq.com / If you have any feedback, please send it to bugsoc@qq.com
 
 A standalone Blockly-based visual editor that generates vanilla Mindustry `mlog`.
 
